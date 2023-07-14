@@ -144,7 +144,14 @@
 
     <div class="p-4 sm:ml-64 bg-slate-300" style="height: 100vh">
         @yield('content')
+
+
     </div>
+
+
+
+
+    @stack('script')
 
 </body>
 

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('document_categories', function (Blueprint $table) {
             $table->id();
             $table->string('category_name');
+            $table->string('category_code');
             $table->timestamps();
         });
     }
@@ -23,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //  Schema::dropIfExists('document_categories');
+        Schema::dropIfExists('document_categories');
     }
 };
